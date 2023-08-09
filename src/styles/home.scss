@@ -1,0 +1,150 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1a21;
+  padding: 7.5vw;
+
+  img {
+    width: 45vw;
+  }
+
+  .text {
+    h1,
+    h2,
+    span {
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-block: 20px 50px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    a {
+      margin-top: 30px;
+    }
+  }
+}
+
+.work {
+  background-color: #26282d;
+  padding-inline: 7.5vw;
+  padding-block: 5rem;
+
+  .work-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+
+    img {
+      width: 49%;
+    }
+  }
+
+  .work-container-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+    margin-bottom: 2%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+
+      img {
+        width: 42%;
+
+        &:first-of-type {
+          margin-bottom: 2%;
+        }
+      }
+    }
+
+    video {
+      position: absolute;
+      width: 56%;
+      right: 0;
+    }
+  }
+
+  .work-container-3 {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  background-color: #1b1a21;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5vw;
+
+  img {
+    width: 50vw;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
+
+    label {
+      width: 70%;
+    }
+
+    input,
+    textarea {
+      width: 70%;
+      background-color: transparent;
+      outline: none;
+      border: 1px solid transparent;
+      border-bottom: 1px solid white;
+      padding-block: 1rem;
+      padding-inline: 0.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.2s ease-in-out;
+
+      &:focus {
+        border: 1px solid white;
+      }
+    }
+
+    button {
+      width: 70%;
+      color: #1b1a21;
+      font-size: 1.25rem;
+      outline: none;
+      border: none;
+      padding: 0.25rem;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: white;
+        background-color: gray;
+      }
+    }
+  }
+}

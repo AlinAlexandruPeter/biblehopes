@@ -1,0 +1,156 @@
+.bible {
+  padding: 5vw 7.5vw;
+  color: white;
+  background-color: #1b1a21;
+  line-height: 1.5rem;
+
+  .bible-read {
+    background-color: #333333;
+    box-shadow: 0 0.4rem 1.8rem 0 rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 2.5vw 5vw;
+    position: relative;
+
+    span {
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      sup {
+        color: rgb(146, 146, 146);
+        margin-inline: 5px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  > button {
+    outline: none;
+    border: none;
+    background-color: #333333;
+    position: absolute;
+    width: 10ch;
+    height: 10ch;
+    border-radius: 50%;
+    top: 50%;
+    position: fixed;
+    cursor: pointer;
+  }
+
+  .prev-button {
+    left: 0;
+    transform: translateX(25%);
+  }
+
+  .next-button {
+    right: 0;
+    transform: translateX(-25%);
+  }
+
+  label {
+    color: white;
+    padding-inline: 10px 11px;
+    border-right: 1px solid white;
+  }
+
+  .flex {
+    background-color: #333333;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .bible-controls {
+    display: flex;
+
+    > * {
+      margin-inline: 20px;
+    }
+  }
+
+  .font-controls {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+
+      button {
+        outline: none;
+        border: 1px solid white;
+        padding: 5px;
+        width: 35px;
+        height: 35px;
+        background-color: #333333;
+        font-size: 1.25rem;
+        cursor: pointer;
+
+        &:first-of-type {
+          border-bottom-left-radius: 8px;
+          border-top-left-radius: 8px;
+        }
+
+        &:last-of-type {
+          border-bottom-right-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+
+      .font-small {
+        font-size: 0.75rem;
+      }
+
+      .font-medium {
+        font-size: 1.05rem;
+      }
+
+      .fontlarge {
+        font-size: 1.5rem;
+      }
+
+      .sans-font {
+        font-family: sans;
+      }
+
+      .selected-font-size,
+      .selected-font-family {
+        background-color: white;
+        color: #333333;
+        transition: all 0.1s ease-in-out;
+      }
+    }
+  }
+
+  .selector-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .MuiInputBase-root {
+    &::before {
+      border-bottom-color: transparent !important;
+    }
+
+    &::after {
+      border-bottom-color: transparent !important;
+    }
+
+    .select {
+      color: white;
+
+      * {
+        color: white;
+        background-color: #333333;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

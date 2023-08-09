@@ -1,0 +1,18 @@
+.subjects-container {
+  background-color: #1b1a21;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7.5vw;
+
+  .subject {
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding: 2rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+}
